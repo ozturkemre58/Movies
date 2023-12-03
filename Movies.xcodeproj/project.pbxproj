@@ -46,60 +46,60 @@
 			path = MainViewController;
 			sourceTree = "<group>";
 		};
-		C33CB9742B1C0249006D1CE5 /* View */ = {
+		C37295B62B1C07BA0007A972 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = View;
+			path = Networking;
 			sourceTree = "<group>";
 		};
-		C33CB9752B1C0250006D1CE5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		C33CB9762B1C0258006D1CE5 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C33CB9772B1C0263006D1CE5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C33CB9782B1C026B006D1CE5 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C33CB9792B1C0276006D1CE5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		C33CB97A2B1C028E006D1CE5 /* Extensions */ = {
+		C37295B72B1C07CE0007A972 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		C33CB97B2B1C02A2006D1CE5 /* Networking */ = {
+		C37295B82B1C07D80007A972 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Networking;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C37295B92B1C07E10007A972 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C37295BA2B1C07F20007A972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C37295BB2B1C08070007A972 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C37295BC2B1C08200007A972 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C37295BD2B1C082C0007A972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C3DFAE052B19200D0059E4AF = {
@@ -121,14 +121,14 @@
 		C3DFAE102B19200D0059E4AF /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				C33CB97B2B1C02A2006D1CE5 /* Networking */,
-				C33CB97A2B1C028E006D1CE5 /* Extensions */,
-				C33CB9792B1C0276006D1CE5 /* Resources */,
-				C33CB9782B1C026B006D1CE5 /* Classes */,
-				C33CB9772B1C0263006D1CE5 /* Model */,
-				C33CB9762B1C0258006D1CE5 /* Controllers */,
-				C33CB9752B1C0250006D1CE5 /* ViewModel */,
-				C33CB9742B1C0249006D1CE5 /* View */,
+				C37295B62B1C07BA0007A972 /* Networking */,
+				C37295B72B1C07CE0007A972 /* Extensions */,
+				C37295B82B1C07D80007A972 /* Resources */,
+				C37295B92B1C07E10007A972 /* Classes */,
+				C37295BA2B1C07F20007A972 /* Model */,
+				C37295BB2B1C08070007A972 /* Controllers */,
+				C37295BC2B1C08200007A972 /* ViewModel */,
+				C37295BD2B1C082C0007A972 /* View */,
 				C3DFAE112B19200D0059E4AF /* AppDelegate.swift */,
 				C33CB96F2B1BFF77006D1CE5 /* MainViewController */,
 				C3DFAE152B19200D0059E4AF /* ViewController.swift */,
