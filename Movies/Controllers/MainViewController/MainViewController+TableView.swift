@@ -18,6 +18,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         registerCell()
     }
     
+    func reloadTableView() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
     func registerCell() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
@@ -32,7 +37,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row)"
+        let item = self.cellDataSource[indexPath.row]
+        cell.textLabel?.text = item.name ?? item.title ?? "Empty"
         return cell
     }
     

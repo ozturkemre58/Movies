@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Movies" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="H5B-Pt-KI1" id="Cfq-cg-rIa"/>
                 <outlet property="tableView" destination="STh-KO-UB2" id="bmH-Iu-Uwo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,12 +24,18 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="H5B-Pt-KI1">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemRedColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="H5B-Pt-KI1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="64T-MV-vK5"/>
                 <constraint firstItem="STh-KO-UB2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="N3g-Tg-u5l"/>
                 <constraint firstItem="STh-KO-UB2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TD2-3Z-8lO"/>
+                <constraint firstItem="H5B-Pt-KI1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XsK-II-vhx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="STh-KO-UB2" secondAttribute="bottom" id="lhW-TS-Mi4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="STh-KO-UB2" secondAttribute="trailing" id="sev-96-p3T"/>
             </constraints>
@@ -38,6 +45,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
