@@ -24,6 +24,6 @@ class NetworkConstant {
     }
     
     public var imageServerAddress: String {
-        return ""
+        return "https://image.tmdb.org/t/p/original/"
     }
 }

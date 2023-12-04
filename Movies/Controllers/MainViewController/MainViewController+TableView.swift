@@ -24,7 +24,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     func registerCell() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(MainMovieCell.register(), forCellReuseIdentifier: MainMovieCell.identifier)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -36,11 +36,16 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainMovieCell.identifier, for: indexPath) as? MainMovieCell else {
+            return UITableViewCell()
+        }
+        
         let item = self.cellDataSource[indexPath.row]
-        cell.textLabel?.text = item.name ?? item.title ?? "Empty"
+        cell.setupCell(viewModel: item)
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
 }

@@ -11,7 +11,7 @@ class MainViewModel {
     
     var isLoading: Observable<Bool> = Observable(false)
     var dataSource: TrendingMovieModel?
-    var cellDataSource: Observable<[MovieModel]> = Observable(nil)
+    var cellDataSource: Observable<[MovieTableViewCellModel]> = Observable(nil)
     
     func numberOfSections() -> Int {
         1
@@ -40,6 +40,6 @@ class MainViewModel {
     }
     
     func mapCellData() {
-        self.cellDataSource.value = self.dataSource?.results ?? []
+        self.cellDataSource.value = self.dataSource?.results.compactMap({ MovieTableViewCellModel(movie: $0) })
     }
 }
