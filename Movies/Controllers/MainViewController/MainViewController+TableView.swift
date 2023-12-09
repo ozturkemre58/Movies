@@ -51,6 +51,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let movieID = cellDataSource[indexPath.row].id
-        
+        self.openDetail(movieId: movieID)
     }
 }
