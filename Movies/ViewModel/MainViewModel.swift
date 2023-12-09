@@ -42,4 +42,33 @@ class MainViewModel {
     func mapCellData() {
         self.cellDataSource.value = self.dataSource?.results.compactMap({ MovieTableViewCellModel(movie: $0) })
     }
+    
+    func retrieveMovie(with id: Int) -> MovieModel {
+        if let movie = dataSource?.results.first(where: { $0.id == id }) {
+            return movie
+        }
+
+        return MovieModel(
+            adult: false,
+            backdropPath: "",
+            id: 0,
+            name: nil,
+            originalLanguage: .en,
+            originalName: nil,
+            overview: "",
+            posterPath: "",
+            mediaType: .movie,
+            genreIDS: [],
+            popularity: 0.0,
+            firstAirDate: nil,
+            voteAverage: 0.0,
+            voteCount: 0,
+            originCountry: nil,
+            title: nil,
+            originalTitle: nil,
+            releaseDate: nil,
+            video: false
+        )
+    }
+
 }

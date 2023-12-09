@@ -55,5 +55,14 @@ class MainViewController: UIViewController {
             self.reloadTableView()
         }
     }
+    
+    func openDetail(movieId: Int) {
+        guard let movie = viewModel.retrieveMovie(with: movieId) else {
+            return
+    }
+        
+        
+        
+    }
 }
 
