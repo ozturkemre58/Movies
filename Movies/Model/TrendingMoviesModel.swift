@@ -26,7 +26,6 @@ struct MovieModel: Codable {
     let backdropPath: String
     let id: Int
     let title: String?
-    let originalLanguage: OriginalLanguage
     let originalTitle: String?
     let overview, posterPath: String
     let mediaType: MediaType
@@ -43,7 +42,6 @@ struct MovieModel: Codable {
         case adult
         case backdropPath = "backdrop_path"
         case id, title
-        case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case overview
         case posterPath = "poster_path"
@@ -66,9 +64,3 @@ enum MediaType: String, Codable {
     case tv = "tv"
 }
 
-enum OriginalLanguage: String, Codable {
-    case de = "de"
-    case en = "en"
-    case ig = "ig"
-    case no = "no"
-}
